@@ -1,10 +1,10 @@
-# Frontend Mentor - IP address tracker solution
+# Frontend Mentor - Job listings with filtering solution
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Frontend Mentor - IP address tracker solution](#frontend-mentor---ip-address-tracker-solution)
+- [Frontend Mentor - Job listings with filtering solution](#frontend-mentor---job-listings-with-filtering-solution)
   - [Table of contents](#table-of-contents)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
@@ -16,24 +16,27 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 
 
+
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See their own IP address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
+- Filter job listings based on the categories
+
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot1.jpg)
 ![](./screenshot2.jpg)
+![](./screenshot3.jpg)
+![](./screenshot4.jpg)
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/mohamedA122ouz/findIP)
-- Live Site URL: [live site URL here](https://mohameda122ouz.github.io/findIP)
+- Solution URL: [Add solution URL here](https://mohamedA122ouz.github.io/jobList)
+- Live Site URL: [Add live site URL here](https://github.com/mohamedA122ouz/jobList)
 
 
 ### Built with
@@ -43,28 +46,41 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+- [Scss](https://sass-lang.com/documentation/)
 
 ### What I learned
 
-I learned how to use forward ref in react JS 
+I learned how to use Scss and its features, such as nested selectors, variables, mixins, and more. I also learned how to use Scss selectors, such as & and #{&}, to simplify and optimize my code.
 
-
-```JSX
-const SomeElement = forwardRef(({orops},ref)=>{
-  return <h1 ref = {ref}></h1>
-});
+Example:
+``` scss
+@mixin centerElement(){
+  transform:translate(-50%,-50%);
+  position:absolute;
+  left:50%;
+  top:50%;
+}
+$containerWidth:80%;
+body{
+  .container{
+    @include centerElement();
+    width:$containerWidth;
+    .centeredElment{
+      @include centerElement();
+      width:$containerWidth/2;
+    }
+  }
+}
 ```
-
-
 
 
 ### Useful resources
 
 - [React](https://react.dev/) - learn react from scratch.
-- [React Forward Ref](https://react.dev/reference/react/forwardRef) - This is an amazing doc which helped me understand how to use forward Ref . I'd recommend it to anyone still learning this concept.
-
+- [Scss](https://sass-lang.com/documentation/)
 
 ## Author
 
 - Website - [@mohamed ahmed azouz](https://mohameda122ouz.github.io/coursera-work/RAAM)
 - Frontend Mentor - [@mohamed ahmed azouz](https://www.frontendmentor.io/profile/mohamedA122ouz)
+
