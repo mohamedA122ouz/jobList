@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://mohamedA122ouz.github.io/jobList)
-- Live Site URL: [Add live site URL here](https://github.com/mohamedA122ouz/jobList)
+- Solution URL: [solution URL is here](https://mohamedA122ouz.github.io/jobList)
+- Live Site URL: [live site URL is here](https://github.com/mohamedA122ouz/jobList)
 
 
 ### Built with
