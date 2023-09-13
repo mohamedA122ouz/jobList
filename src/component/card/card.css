@@ -1,0 +1,106 @@
+@font-face {
+  font-family: poppins;
+  src: url("../Poppins/Poppins-Regular.ttf");
+}
+.card {
+  border-left: 6px solid transparent;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "poppins";
+  padding: 20px;
+  padding-top: 0px;
+}
+.card .isNew {
+  background-color: #70b7b4;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 40px;
+  margin: 0px 10px 0px 40px;
+}
+.card .featured {
+  background-color: black;
+  color: white;
+  padding: 3px 9px;
+  border-radius: 40px;
+  margin: 0px 0px 0px 10px;
+}
+.card.featured {
+  border-left: 6px solid #70b7b4;
+}
+.card .cardImg {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  top: -25px;
+  margin-bottom: -25px;
+}
+.card .cardImg img {
+  width: 50px;
+}
+.card .cardPositionName p {
+  color: black;
+  transition: 250ms;
+  cursor: pointer;
+}
+.card .cardPositionName p:hover {
+  transition: 250ms;
+  color: #6cafac;
+}
+.card .cardDetails {
+  font-weight: 500;
+}
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card.PC {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.card.PC .cardImg {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  top: 0;
+}
+.card.PC .cardImg img {
+  width: auto;
+}
+.card.PC .contentWrapper {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.card.PC .tags {
+  align-items: center;
+  margin-left: auto;
+}
+.card.PC .tags .tag {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 0.7rem;
+  padding: 5px;
+  transition: 250ms;
+  border-radius: 2px;
+}
+.card.PC .tags .tag:hover {
+  background-color: rgba(112, 183, 180, 0.7176470588);
+  color: white;
+}
+
+.tag {
+  background-color: rgba(112, 183, 180, 0.2862745098);
+  padding: 10px;
+  font-size: normal;
+  color: #6cafac;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}/*# sourceMappingURL=card.css.map */

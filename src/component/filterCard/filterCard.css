@@ -1,0 +1,77 @@
+.filter {
+  background-color: white;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.filter .tag {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 5px;
+  border-radius: 4px;
+  cursor: default;
+}
+.filter .content {
+  display: flex;
+  width: 94%;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.clear {
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -9%;
+  transform: translate(-50%, -50%);
+  transition: 150ms;
+  text-decoration: none;
+}
+.clear:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 2px #72b8b5;
+}
+
+.del {
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  background-color: #72b8b5;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  position: relative;
+  transition: 250ms;
+}
+.del::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  width: 3px;
+  height: 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.del::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  width: 3px;
+  height: 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.del:hover {
+  background-color: black;
+}/*# sourceMappingURL=filterCard.css.map */

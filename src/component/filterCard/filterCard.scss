@@ -1,0 +1,80 @@
+@mixin sudoEl($t) {
+    $sudoD: 3px;
+    content: "";
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    width: $sudoD;
+    height: $sudoD*5;
+    left: 50%;
+    top: 50%;
+    transform: $t;
+}
+
+$radius: 0 4px 4px 0;
+
+.filter {
+    background-color: white;
+    display: flex;
+    height: fit-content;
+    transform: translateY(-50%);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    .tag {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 5px;
+        border-radius: 4px;
+        cursor: default;
+    }
+
+    .content {
+        display: flex;
+        width: 94%;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+.clear {
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -9%;
+    transform: translate(-50%, -50%);
+    transition: 150ms;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        text-shadow: 0 0 2px #72b8b5;
+    }
+}
+
+.del {
+    cursor: pointer;
+    border-radius: $radius ;
+    background-color: #72b8b5;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    position: relative;
+    transition: 250ms;
+
+    &::after {
+        @include sudoEl(translate(-50%, -50%) rotate(45deg));
+    }
+
+    &::before {
+        @include sudoEl(translate(-50%, -50%) rotate(-45deg));
+    }
+
+    &:hover {
+        background-color: black;
+    }
+}

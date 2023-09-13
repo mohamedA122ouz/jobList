@@ -1,0 +1,121 @@
+@import "fontFace.scss";
+$cardBorder: 6px;
+$image: 50px;
+$marginTopandBottom: 40px;
+
+.card {
+    border-left: $cardBorder solid transparent;
+    width: 80%;
+    margin: auto;
+    margin-top: $marginTopandBottom;
+    margin-bottom: $marginTopandBottom;
+    background-color: white;
+    font-weight: bold;
+    border-radius: $cardBorder;
+    font-family: "poppins";
+    padding: 20px;
+    padding-top: 0px;
+
+    .isNew {
+        background-color: #70b7b4;
+        color: white;
+        padding: 3px 9px;
+        border-radius: 40px;
+        margin: 0px 10px 0px 40px;
+    }
+
+    .featured {
+        background-color: black;
+        color: white;
+        padding: 3px 9px;
+        border-radius: 40px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    &.featured {
+        border-left: $cardBorder solid #70b7b4;
+    }
+
+    #{&}Img {
+        width: fit-content;
+        position: relative;
+        top: -($image/2);
+        margin-bottom: -($image/2);
+
+        img {
+            width: $image;
+        }
+    }
+
+    #{&}PositionName {
+        p {
+            color: black;
+            transition: 250ms;
+            cursor: pointer;
+            &:hover{
+                transition: 250ms;
+                color: #6cafac;
+            }
+        }
+        
+    }
+
+    #{&}Details {
+        font-weight: 500;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+
+
+
+    &.PC {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+
+        .cardImg {
+            width: fit-content;
+            position: relative;
+            top: (0);
+
+            img {
+                width: auto;
+            }
+        }
+
+        .contentWrapper {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .tags {
+            align-items: center;
+            margin-left: auto;
+            .tag {
+                height: fit-content;
+                font-size: 0.7rem;
+                padding: 5px;
+                transition: 250ms;
+                border-radius: 2px;
+                &:hover{
+                    background-color: #70b7b4b7;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.tag {
+    background-color: #70b7b449;
+    padding: 10px;
+    font-size: normal;
+    color: #6cafac;
+    cursor: pointer;
+    user-select: none;
+}

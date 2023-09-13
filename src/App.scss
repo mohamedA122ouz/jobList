@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #75bbba;
+    background-color: #d3f0ef;
+}
+@mixin backGroundI {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+    background-color: #68aaa5;
+    
+    &.FM {
+        background-image: url("./component/images/bg-header-mobile.svg");
+        @include backGroundI()
+    }
+    &.FP{
+        background-image: url("./component/images/bg-header-desktop.svg");
+        @include backGroundI()
+    }
+
+}
